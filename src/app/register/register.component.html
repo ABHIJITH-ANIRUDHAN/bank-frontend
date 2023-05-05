@@ -1,0 +1,45 @@
+<app-navbar></app-navbar>
+<div *ngIf="registerStatus" class="container mt-5 text-center text-danger" style="margin-top: 200px;">
+  <h3>Your data's are getting registered...Please wait</h3>
+</div>
+<!-- Register success msg -->
+<div *ngIf="!registerStatus" class="container-fluid mt-2">
+    <h2 class="text-primary">Account Opening Form</h2>
+    <p style="text-align:justify">This is dummy content: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius earum incidunt esse quidem voluptatibus veniam fugiat dolorem, tenetur accusamus totam harum alias repellendus dolor quia illo animi, unde eos delectus beatae adipisci? Temporibus iste ex repellat est unde itaque debitis, ad ipsa recusandae, voluptatum saepe fuga voluptatibus, quis in tempore.</p>
+<div class="row mt-3 mb-3">
+    <div class="col-4 mt-2 text-center">
+        <img style="width:300px;" src="data:image/jpeg;base64,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" alt="img">
+        <br>
+        <button routerLink="" class="btn btn-warning mt-2"><i class="fa-solid fa square-left"></i>Back</button>
+    </div>
+    <div class="col-lg-8">
+        <form [formGroup]="registerForm" style="margin-top: 20%;" class="border p-5 mt-5 me-5 rounded" (ngSubmit)="register()">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Username" name="username" formControlName="username">
+                <label for="floatingInput">Username</label>
+              </div>
+              <div *ngIf="this.registerForm.get('username')?.errors && this.registerForm.get('username')?.touched" class="text-danger mb-2">Invalid Username</div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingAccountNumber" placeholder="Account Number" name="accountnumber" formControlName="acno">
+                <label for="floatingInput">Account Number</label>
+              </div>
+              <div *ngIf="this.registerForm.get('acno')?.errors && this.registerForm.get('acno')?.touched" class="text-danger mb-2">Invalid Accont number</div>
+              <div class="form-floating">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" name="password" formControlName="password">
+                <label for="floatingPassword">Password</label>
+              </div>
+              <div *ngIf="this.registerForm.get('password')?.errors && this.registerForm.get('password')?.touched" class="text-danger mb-2">Invalid Accont number</div>
+              <div class="form-floating mt-3">
+                <input type="password" class="form-control" id="ConfirmPassword" placeholder="Confirm Password" name="cpassword" formControlName="cpassword">
+                <label for="ConfirmPassword">Confirm Password</label>
+              </div>
+              <div *ngIf="this.registerForm.value.password!=this.registerForm.value.cpassword && registerForm.get('cpassword')?.touched" class="text-danger mb-2">Password does not match</div>
+
+              <div class="mt-3">
+                <button type="submit" class="btn btn-primary">Register</button>
+                <span class="ms-2">Already a user? Click here to  <a routerLink="/">Log in</a></span>
+              </div>
+        </form>
+    </div>
+</div>
+</div>

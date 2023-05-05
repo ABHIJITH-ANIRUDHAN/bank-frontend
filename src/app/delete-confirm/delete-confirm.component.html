@@ -1,0 +1,13 @@
+<div *ngIf="acno" class="container mt-5 text-center">
+    <div class="row mt-5">
+      <div class="col-lg-3"></div>
+      <div class="col-lg-6 border rounded mt-5 p-5">
+           <h4 class="mt-2 mb-2">Are u sure you want to delete your account</h4>
+           <div class="d-flex justify-content-evenly">
+           <button (click)="deleteFromChild()" class="btn btn-danger">Yes</button>
+           <button (click)="cancel()" class="btn btn-success">No</button>
+        </div>
+      </div>
+      <div class="col-lg-3"></div>
+    </div>
+  </div>
